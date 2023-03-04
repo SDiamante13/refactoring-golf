@@ -1,4 +1,4 @@
-package tech.pathtoprogramming.refactoringgolf.round1.B;
+package tech.pathtoprogramming.refactoringgolf.hole1.after;
 
 public class FootballScoreStats {
 

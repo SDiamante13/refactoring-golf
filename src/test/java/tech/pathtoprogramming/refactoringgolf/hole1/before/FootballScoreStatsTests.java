@@ -1,14 +1,14 @@
-package tech.pathtoprogramming.refactoringgolf.round1.B;
+package tech.pathtoprogramming.refactoringgolf.hole1.before;
 
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static tech.pathtoprogramming.refactoringgolf.round1.B.FootballScoreStatsTests.TeamAssertions.the;
+import static tech.pathtoprogramming.refactoringgolf.hole1.before.FootballScoreStatsTests.TeamAssertions.the;
 
 class FootballScoreStatsTests {
 
     @Test
-    void B_teamTotalsForStubbedData() {
+    void totalsFootballScoresForTeam() {
         the().teamTotalFor("Liverpool").is(6);
         the().teamTotalFor("Everton").is(0);
         the().teamTotalFor("Aston Villa").is(1);
@@ -17,18 +17,18 @@ class FootballScoreStatsTests {
 
     static class TeamAssertions {
 
-        private final FootballScoreStats stats = new FootballScoreStats(new FootballData());
+        private final FootballScoreStats stats = new FootballScoreStats();
 
         private String teamName;
 
         private TeamAssertions() {
         }
 
-        public static TeamAssertions the() {
-            return new TeamAssertions();
+        public static FootballScoreStatsTests.TeamAssertions the() {
+            return new FootballScoreStatsTests.TeamAssertions();
         }
 
-        public TeamAssertions teamTotalFor(String teamName) {
+        public FootballScoreStatsTests.TeamAssertions teamTotalFor(String teamName) {
             this.teamName = teamName;
             return this;
         }
@@ -40,4 +40,3 @@ class FootballScoreStatsTests {
         }
     }
 }
-
