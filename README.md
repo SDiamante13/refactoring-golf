@@ -3,7 +3,7 @@ Refactoring Golf
 
 Refactoring Golf is a game designed to stretch your refactoring muscles and get you to explore your IDE to see what’s really possible using shortcuts and automation.
 
-This repo contains a number of 'rounds', each equivalent to a 'hole' of a golf game. Your goal is to (as safely and efficiently as possible) refactor the Round\_N\_A code to look like the Round\_N\_B code. You must aim to do it in as few “strokes” as possible. A stroke is essentially a change made to the code, and every stroke costs you points.
+This repo contains a number of 'holes', each equivalent to a 'hole' of a golf game. Your goal is to (as safely and efficiently as possible) refactor the before code to look like the after code. You must aim to do it in as few “strokes” as possible. A stroke is essentially a change made to the code, and every stroke costs you points.
 
 You should count your score as follows:
 
